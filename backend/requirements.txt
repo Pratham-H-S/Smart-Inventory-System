@@ -1,0 +1,12 @@
+# backend/requirements.txt
+
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+passlib[bcrypt]
+python-jose
+python-multipart
+fastapi-mail
+pytest
+pytest-cov
