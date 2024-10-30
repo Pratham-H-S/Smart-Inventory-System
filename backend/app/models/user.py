@@ -12,6 +12,5 @@ class User(Base):
     hashed_password = Column(String(255), nullable=False)
     is_active = Column(Boolean, default=True)
     role = Column(String(255), nullable=False, default="user")  # Roles: admin, inventory_manager, supplier, user
-
-    inventory = relationship("InventoryItem", back_populates="owner")
+    inventory = relationship("InventoryItem", primaryjoin="User.id==InventoryItem.owner_id")
     suppliers = relationship("Supplier", back_populates="owner")

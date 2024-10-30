@@ -5,7 +5,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     # DATABASE_URL: str = "postgresql://user:password@localhost/dbname"
-    DATABASE_URL: str = "mysql+pymysql://newuser:password@localhost:3306/inventory_db"
+    DATABASE_URL: str = "mysql+pymysql://newuser:password@localhost:3306/inventory_final_db"
 
     SECRET_KEY: str = "your-secret-key"
     ALGORITHM: str = "HS256"
